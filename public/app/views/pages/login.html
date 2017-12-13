@@ -1,0 +1,13 @@
+<link rel="stylesheet" href = "assets/css/login.css">
+<div class="container">
+
+      <form class="form-signin" ng-submit="login.loginUser()">
+        <h2 class="form-signin-heading"><center> Sign In</center></h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus ng-model="login.loginInfo.email">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required ng-model="login.loginInfo.password">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+
+    </div> <!-- /container -->

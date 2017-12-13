@@ -1,0 +1,35 @@
+<div style="padding-top: 10px">
+<div class="input-group input-group-lg search">
+  <span class="input-group-addon" id="sizing-addon1">Search</span>
+  <input type="text" class="form-control" placeholder="Organization" aria-label="Organization" aria-describedby="sizing-addon1" ng-model="orgSearch">
+</div>
+</div>
+<table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+         		<th>Keywords</th>
+            </tr>
+        </thead>
+        <tbody>
+
+                
+                <tr ng-repeat="org in orgCont.organizations | filter: {description: orgSearch}">
+
+                    <td>{{org.name}}</td>
+                    <td>{{org.description}}</td>
+                    <td>{{org.keywords.join(", ")}}</td>
+   
+                </tr>
+        <tfoot>
+            <tr>
+                <td colspan="2"></td>
+                <strong>{{worth}}</strong><td><a class="btn btn-success btn-lg" href="/create" role="button" >Create Organization</a></td>
+            </tr>
+        </tfoot>            
+
+
+        </tbody>
+        
+    </table>

@@ -1,0 +1,35 @@
+{
+  "name": "engage",
+  "version": "1.0.0",
+  "description": "Engage is an application that connects students with opportunities. ",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "express-jwt": "^5.3.0",
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.1.0",
+    "method-override": "^2.3.10",
+    "mongoose": "^4.10.8",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoistPockets/engage.git"
+  },
+  "author": "Richard Mbouombouo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoistPockets/engage/issues"
+  },
+  "homepage": "https://github.com/MoistPockets/engage#readme"
+}

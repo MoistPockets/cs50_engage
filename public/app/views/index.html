@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href = "assets/css/style.css">
+	<!-- Angular Resources -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-resource.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-animate.js"></script>
+	<!-- CONTROLLERS -->
+	<!-- <script src="app/controllers/mainCtrl.js"></script>
+	<script src="app/controllers/userCtrl.js"></script> -->
+
+	<!-- SERVICES -->
+	<!-- <script src="app/services/authentication.service.js"></script>
+	<script src="app/services/user.service.js"></script> -->
+	<!-- MAIN FILES -->
+	<!-- <script src="app/routes.js"></script> -->
+	<script src="app/app.js"></script>
+
+	<title>Engage</title>
+	<!-- FOR ANGULAR ROUTING -->
+	<base href="/">
+
+</head>
+<body ng-app="engageApp" ng-controller="mainController as main">
+<!-- NAVBAR -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="/">Engage</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <!-- USER NOT LOGGED IN -->
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto" >
+	      <li class="nav-item disabled">
+	        <a class="nav-link" href="/register"> Register</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="/login"> Login</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="/organizations"> Organizations</a>
+	      </li>	      
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <a class="nav-link disabled"> Richard Mbouombouo</a>
+	    </form>
+	  </div>
+	</nav>
+<!-- END NAVBAR -->
+
+
+
+<!-- ANGULAR APP VIEWS -->
+	<main class="container"> 	 
+	<div ng-view></div>
+	</main>
+</body>
+</html>
